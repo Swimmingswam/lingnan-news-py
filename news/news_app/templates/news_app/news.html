@@ -1,0 +1,16 @@
+{% extends "news_app/base.html" %}
+{% block content %}
+<h1>求是新闻</h1>
+<ul>
+{% for news in text %}
+<li>
+    <div>{{news}}</div>
+    <ul>
+        {% for src in isrc%}
+        <li><img src="{{src}}" alt=""></li>
+        {% endfor %}
+    </ul>
+</li>
+{% endfor %}
+</ul>
+{% endblock content %}

@@ -1,0 +1,9 @@
+{% extends "news_app/base.html" %}
+{% block content %}
+<h1>美丽校园</h1>
+<ul>
+    {% for src in imgsrc %}
+    <li><img src="{{src}}" alt=""></li>
+    {% endfor %}
+</ul>
+{% endblock content %}

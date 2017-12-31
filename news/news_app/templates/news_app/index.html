@@ -1,0 +1,16 @@
+{% extends "news_app/base.html" %}
+{% block content %}
+    <div class="icon-wrapper">
+		<ul class="icon-list">
+			<li class="icon-item"><a href="{% url 'news_app:konwladge' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/.Zk*4URzg851cXFG1XxEi3Wj3ec*X*ncw0I2VtxzdDs!/b/dPIAAAAAAAAA&bo=RABCAAAAAAARFyY!&rf=viewer_4" alt="" class="icon">校情总览</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:group' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/GPco3A9n*ioBB5n67bOhNsOrEOqpr7Mny9AfW91AOnE!/b/dPMAAAAAAAAA&bo=QgA.AAAAAAARF1w!&rf=viewer_4" alt="" class="icon">校系机构</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:news' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/xczPipZeiTN2fiStnjcNI6nP.imVqY4W44L0*W6sea4!/b/dPMAAAAAAAAA&bo=QgBCAAAAAAARFyA!&rf=viewer_4" alt="" class="icon">求是新闻</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:culture' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/oP*ok1IP8KeQv997ktiY5JBYmSH8f*l5UaABLdDlKVo!/b/dF4BAAAAAAAA&bo=RABEAAAAAAARFyA!&rf=viewer_4" alt="" class="icon">文化校园</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:beatiful' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/fjbq2aoqg1kGELLqhoOqj0hfQWzowpABCPo*ydeYGQQ!/b/dPIAAAAAAAAA&bo=QgBCAAAAAAARFyA!&rf=viewer_4" alt="" class="icon">美丽校园</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:home' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/oZHH5Lnq*qQACwdJ.fzI6ieH*FH9kZUID2zmEwlejjA!/b/dF8BAAAAAAAA&bo=QgBCAAAAAAARFyA!&rf=viewer_4" alt="" class="icon">校友之家</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:come' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/bXigNeS2lfR6y00SW.TK.EpnH**g3t9LzxNLg2i6*RU!/b/dD8BAAAAAAAA&bo=RgBGAAAAAAARFyA!&rf=viewer_4" alt="" class="icon">120校庆</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:old' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/xgunOqWPiHeNTQAZSWP2meyJJ3hTYcWac6MHnU3aNjs!/b/dF4BAAAAAAAA&bo=RABCAAAAAAARFyY!&rf=viewer_4" alt="" class="icon">往期精彩</a></li>
+			<li class="icon-item"><a href="{% url 'news_app:talk' %}"><img src="http://m.qpic.cn/psb?/V13hoY7w2LwHeN/yRKolPEceHKO.9CXRnfBdbmSUvsbOpxBSCqX1zlz9AA!/b/dPMAAAAAAAAA&bo=RABCAAAAAAARFyY!&rf=viewer_4" alt="" class="icon">联系我们</a></li>
+		</ul>
+    </div>
+{% endblock content %}

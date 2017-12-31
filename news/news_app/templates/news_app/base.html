@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+body{
+  background-color: rgb(250,242,231);
+}
+#app{
+  position:relative;
+  height:100%;
+  width:990px;
+}
+.pic-wrapper{
+  display:flex;
+  top:0;
+  left:0;
+}
+.pic-list{
+   list-style-type :none;
+   top:0;
+   left:0;
+   margin:0px;
+   padding:0px;
+   display:flex;
+  }
+.pic-item{
+   	flex-wrap:nowrap;
+    display:inline-block;
+}  
+.pic{
+    height:530px;
+     width:1032px;
+     margin-right:9px;
+}
+.tab-wrapper{
+	height:100px;
+	width:1000px;
+   position:fixed;
+   bottom:12px;
+   left:26px;
+   background: rgba(0,0,100,0.3);
+ } 
+  .tab{
+   display:flex;
+   padding-left:145px;
+   padding-bottom: 100px;
+   margin-bottom: 100px;
+  }
+   .tab-item{
+   	flex:1;
+    list-style-type :none;
+      font-size: 65px
+
+   }
+    .tab-item a{
+      display:inline-block;
+      height:100px;
+     text-decoration :none;
+     color:rgb(17,17,27);
+    }
+   .icon-list{
+   	flex-wrap: wrap;
+     display:flex;
+     width:100%;
+     padding-bottom: 100px;
+     margin-top:-3px;
+   }
+  .icon-item{
+  	flex-wrap: wrap;
+   	 display:inline-block;
+   	 width:320px;
+   	 height:400px;
+     /*border:1px solid rgba(17,17,27,0.1);*/
+     text-align: center;
+     font-size: 50px
+   }
+   .icon-item a{
+   	margin:auto;
+   	display:inline-block;
+   	padding-top:326px;
+    text-decoration:none;
+    color:rgb(7,17,27);
+    position:relative;
+   }
+   .icon{
+    position:absolute;
+    width:202px;
+    height: 210px;
+    top:70px;
+    left:0px;
+   }
+</style>
+</head>
+<body>
+<div id="app">
+   <div class="pic-wrapper" >
+      <ul class="pic-list">
+        <li class="pic-item" >
+           <img src="http://www.lingnan.edu.cn/__local/0/9A/D6/92C8447151F5F304DA6077C4ED1_17316D93_18267.jpg" class="pic">
+        </li>
+      </ul>
+    </div>
+    {% block content %}{% endblock content %}
+    <div class="tab-wrapper">
+      <ul class="tab">
+        <li class="tab-item">
+	     		<a href="{% url 'news_app:news' %}">新闻</a>
+	     	</li>
+         <li class="tab-item">
+	     		<a href="{% url 'news_app:index' %}">首页</a>
+	     	</li>
+         <li class="tab-item">
+	     		<a href="{% url 'news_app:comment' %}">留言</a>
+	     	</li>
+      </ul>
+   </div>
+  </div>
+</body>
+</html>

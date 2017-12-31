@@ -1,0 +1,9 @@
+{% extends "news_app/base.html" %}
+{% block content %}
+<h1>师生留言</h1>
+<form action="{% url 'news_app:comment' %}" method='post'>
+{% csrf_token %}
+{{form.as_p}}
+<button name='submit'>submit it</button>
+</form>
+{% endblock content %}
